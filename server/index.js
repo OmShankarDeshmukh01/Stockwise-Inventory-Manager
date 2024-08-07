@@ -5,9 +5,7 @@ require('dotenv').config();
 const cors = require('cors');
 
 
-app.use(cors({
-  origin: 'https://stockwise-inventory-managemnt.netlify.app/' // Replace with your actual Netlify domain
-}));
+
 
 //express parse
 const app = express();
@@ -46,6 +44,9 @@ app.use("/api/dashboard/companies/:companyId/stocks", stockRoutes);
 // Error handling middleware
 app.use(errorHandler);
 
+app.use(cors({
+  origin: 'https://stockwise-inventory-managemnt.netlify.app/' // Replace with your actual Netlify domain
+}));
 // Connect to MongoDB and start the server
 mongoose.connect(process.env.MONGO_URI).then(() => {
   app.listen(process.env.PORT, () => {
