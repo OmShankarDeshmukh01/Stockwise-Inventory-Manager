@@ -112,7 +112,7 @@
   .chat_dashboard_heading {
     width: 32.5rem;
     position: static;
-    position: -webkit-sticky;
+    position: webkit-sticky;
     top: 0;
   }
   .chat_dashboard_button {
