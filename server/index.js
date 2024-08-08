@@ -45,7 +45,7 @@ app.use("/api/dashboard/companies/:companyId/stocks", stockRoutes);
 app.use(errorHandler);
 
 app.use(cors({
-  origin: 'https://stockwise-inventory-manager.onrender.com' 
+  origin: 'https://stockwise-inventory-manager.vercel.app/' 
 }));
 // Connect to MongoDB and start the server
 mongoose.connect(process.env.MONGO_URI).then(() => {
