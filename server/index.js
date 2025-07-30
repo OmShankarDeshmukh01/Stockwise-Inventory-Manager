@@ -22,7 +22,9 @@ const allowedOrigins = [
   "http://localhost:5173",
   "https://stockwise-omega.vercel.app",
   "http://stockwise-omega.vercel.app",
+  "https://stockwise.shauryacodes.me/",
   "https://stockwise.shauryacodes.me",
+  "http://stockwise.shauryacodes.me/",
   "http://stockwise.shauryacodes.me",
 ];
 
